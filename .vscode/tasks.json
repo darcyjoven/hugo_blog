@@ -31,7 +31,7 @@
         {
             "label": "git push",
             "type": "shell",
-            "command": "git push",
+            "command": "git push -u origin main",
             "dependsOn":["git commit"]
         },
         
