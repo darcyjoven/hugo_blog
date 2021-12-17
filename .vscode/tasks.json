@@ -14,7 +14,7 @@
         {
             "label": "hugo public",
             "type": "shell",
-            "command": "hugo --theme=even --baseUrl='http://darcyjoven.github.io/'"
+            "command": "hugo -d public"
         },
         {
             "label": "git add",
@@ -33,14 +33,44 @@
             "type": "shell",
             "command": "git push -u origin main",
             "dependsOn":["git commit"]
-        },
-        
+        },        
         {
             "label": "test",
             "type": "shell",
             "command": "echo  试试${input:comment}",
             "dependsOn":[]
+        },        
+        {
+            "label": "test2",
+            "type": "shell",
+            "command": "echo  试试${input:comment}", 
+            "dependsOn":[]
         },
+        {
+            "label": "git add2",
+            "type": "shell",
+            "command": "git -C ./public add .",
+            "dependsOn":["hugo public"]
+
+        },
+        {
+            "label": "git commit2",
+            "type": "shell",
+            "command": "git -C ./public commit -m '${input:comment}'",
+            "dependsOn":["git add2"]
+        },
+        {
+            "label": "git push2",
+            "type": "shell",
+            "command": "git -C ./public push",
+            "dependsOn":["git commit2"]
+        },
+        {
+            "label": "push",
+            "type": "shell",
+            "command": "echo 一键推送成功！",
+            "dependsOn":["hugo public","git add2","git commit2","git push2","git add","git commit","git push"]
+        }
     ],
     "inputs": [
         {
