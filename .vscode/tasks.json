@@ -1,0 +1,53 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "options": {
+        "cwd": "${workspaceFolder}"
+    },
+    "tasks": [
+        {
+            "label": "new post",
+            "type": "shell",
+            "command": "./new.exe"
+        },
+        {
+            "label": "hugo public",
+            "type": "shell",
+            "command": "hugo --theme=even --baseUrl='http://darcyjoven.github.io/'"
+        },
+        {
+            "label": "git add",
+            "type": "shell",
+            "command": "git add ."
+
+        },
+        {
+            "label": "git commit",
+            "type": "shell",
+            "command": "git commit -m '${input:comment}'",
+            "dependsOn":["git add"]
+        },
+        {
+            "label": "git push",
+            "type": "shell",
+            "command": "git push",
+            "dependsOn":["git commit"]
+        },
+        
+        {
+            "label": "test",
+            "type": "shell",
+            "command": "echo ${input:comment}",
+            "dependsOn":[]
+        },
+    ],
+    "inputs": [
+        {
+            "type": "promptString",
+            "id": "comment", 
+            "default": "comment",
+            "description": "请输入备注", 
+        }
+    ]
+}
