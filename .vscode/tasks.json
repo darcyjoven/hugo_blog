@@ -38,7 +38,7 @@
         {
             "label": "test",
             "type": "shell",
-            "command": "echo ${input:comment}",
+            "command": "echo  试试${input:comment}",
             "dependsOn":[]
         },
     ],
