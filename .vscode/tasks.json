@@ -69,11 +69,19 @@
             ]
         },
         {
-            "label": "push all",
+            "label": "git push2",
             "type": "shell",
             "command": "git -C ./public push",
             "dependsOn": [
                 "git commit2"
+            ]
+        }, 
+        {
+            "label": "push all",
+            "type": "shell",
+            "command": "echo 全部任务已完成，可以关闭窗口！",
+            "dependsOn": [
+                "git push2"
             ]
         }, 
     ],
