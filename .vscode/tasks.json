@@ -12,11 +12,6 @@
             "command": "./new.exe"
         },
         {
-            "label": "hugo public",
-            "type": "shell",
-            "command": "hugo -d public"
-        },
-        {
             "label": "git add",
             "type": "shell",
             "command": "git add ."
@@ -35,6 +30,14 @@
             "command": "git push -u origin main",
             "dependsOn": [
                 "git commit"
+            ]
+        },
+        {
+            "label": "hugo public",
+            "type": "shell",
+            "command": "hugo -d public",
+            "dependsOn": [
+                "git push"
             ]
         },
         {
@@ -66,28 +69,13 @@
             ]
         },
         {
-            "label": "git push2",
+            "label": "push all",
             "type": "shell",
             "command": "git -C ./public push",
             "dependsOn": [
                 "git commit2"
             ]
-        },
-        {
-            "label": "push", 
-            "type": "shell", 
-            "command": "echo 一键推送成功！",
-            "dependsOn": [
-                "hugo public",
-                "git add2",
-                "git commit2",
-                "git push2",
-                "git add",
-                "git commit",
-                "git push"
-            ],
-            "problemMatcher": [], 
-        }
+        }, 
     ],
     "inputs": [
         {
