@@ -222,10 +222,22 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
 #  mediaType = "text/plain"
 #  isPlainText = true
 #  isHTML = false
-#
-#[outputs]
-#  home = ["HTML", "RSS"]
+[outputs]
+ home = ["HTML", "RSS","Algolia"]
 #  page = ["HTML", "MarkDown"]
 #  section = ["HTML", "RSS"]
 #  taxonomy = ["HTML", "RSS"]
 #  taxonomyTerm = ["HTML"]
+#
+[outputFormats.Algolia]
+  baseName = "algolia"
+  isPlainText = true
+  mediaType = "application/json"
+  notAlternative = true
+
+
+[params.algolia]
+  appId = "G181U16T8Q"
+  indexName = "blog_index"
+  searchOnlyKey = "ef9667e0cd9b79d07c1ea16187ff7c8b"
+

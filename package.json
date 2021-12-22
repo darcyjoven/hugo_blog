@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "atomic-algolia": "^0.3.19"
+  },
+  "name": "site",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "algolia": "atomic-algolia"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darcyjoven/hugo_blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darcyjoven/hugo_blog/issues"
+  },
+  "homepage": "https://github.com/darcyjoven/hugo_blog#readme",
+  "description": ""
+}

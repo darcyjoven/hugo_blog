@@ -33,11 +33,27 @@
             ]
         },
         {
+            "label": "hugo index",
+            "type": "shell",
+            "command": "hugo",
+            "dependsOn": [
+                "git push"
+            ]
+        },
+        {
+            "label": "algolia",
+            "type": "shell",
+            "command": "npm run algolia",
+            "dependsOn": [
+                "hugo index"
+            ]
+        },
+        {
             "label": "hugo public",
             "type": "shell",
             "command": "hugo -d public",
             "dependsOn": [
-                "git push"
+                "algolia"
             ]
         },
         {

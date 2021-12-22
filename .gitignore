@@ -3,3 +3,5 @@ themes/
 *.exe
 .vscode/launch.json
 static/mk_img/
+.env
+node_modules
