@@ -5,7 +5,7 @@ title = "darcyjoven's"
 preserveTaxonomyNames = true
 enableRobotsTXT = true
 enableEmoji = true
-theme = ["hugo-search-fuse-js","even"]
+theme = "even"
 enableGitInfo = false # use git commit log to generate lastmod record # 可根据 Git 中的提交生成最近更新记录。
 
 # Syntax highlighting by Chroma. NOTE: Don't enable `highlightInClient` and `chroma` at the same time!
@@ -140,8 +140,8 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
     clientSecret = ""       # Your client secret
 
   [params.utterances]       # https://utteranc.es/
-    owner = ""              # Your GitHub ID
-    repo = ""               # The repo to store comments
+    owner = "darcyjoven"              # Your GitHub ID
+    repo = "darcyjoven/blog-comments"               # The repo to store comments
 
   [params.gitalk]           # Gitalk is a comment system based on GitHub issues. see https://github.com/gitalk/gitalk
     owner = ""              # Your GitHub ID
