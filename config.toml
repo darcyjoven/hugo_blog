@@ -241,3 +241,12 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   indexName = "blog_index"
   searchOnlyKey = "ef9667e0cd9b79d07c1ea16187ff7c8b"
 
+[params.timecount]
+  year=2019
+  month=11
+  day=18
+  hour=16
+  min=0
+  sec=0
+  text="我们在一起已经"
+
