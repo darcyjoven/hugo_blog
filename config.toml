@@ -244,7 +244,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
 [params.timecount]
   year=2019
   month=11
-  day=18
+  day=14
   hour=16
   min=0
   sec=0
