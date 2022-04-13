@@ -9,7 +9,8 @@
         {
             "label": "new post",
             "type": "shell",
-            "command": "./new.exe"
+            "command": "./new.exe",
+            "problemMatcher": []
         },
         {
             "label": "git add",
