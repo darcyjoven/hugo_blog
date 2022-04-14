@@ -1,5 +1,5 @@
 baseURL = "http://darcyjoven.com/"
-languageCode = "zh-cn"
+languageCode = "zh-CN"
 defaultContentLanguage = "zh-CN"                             # en / zh-cn / ... (This field determines which i18n file to use)
 title = "darcyjoven's"
 preserveTaxonomyNames = true
