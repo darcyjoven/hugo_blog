@@ -10,6 +10,7 @@
             "label": "new post",
             "type": "shell",
             "command": "./new.exe",
+            "detail": "新建一篇文章", 
             "problemMatcher": []
         },
         {
