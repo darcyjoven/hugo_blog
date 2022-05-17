@@ -1,0 +1,5 @@
+{
+    "pasteImage.path": "${currentFileDir}/mk_img",
+    "pasteImage.basePath": "${currentFileDir}/",
+    "pasteImage.prefix": "/post/",
+}
