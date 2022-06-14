@@ -1,5 +1,5 @@
 {
-    "pasteImage.path": "${currentFileDir}/mk_img",
-    "pasteImage.basePath": "${currentFileDir}/",
-    "pasteImage.prefix": "/post/",
+    "markdown-image.base.fileNameFormat": "${mdname}-${mm}-${mss}-${rand,10}",
+    "markdown-image.local.path": "/themes/even/static/mk_img",
+    "markdown-image.local.referencePath": "/mk_img/"
 }
