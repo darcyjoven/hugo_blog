@@ -248,5 +248,5 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   hour=16
   min=0
   sec=0
-  text="我们在一起已经"
+  text="has been"
 
